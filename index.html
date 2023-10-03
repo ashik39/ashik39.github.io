@@ -24,615 +24,447 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+	margin: 0 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc( 100vh - 30px );
+	text-shadow: 0 0 2px white;
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 11px;
+}
+p > a:first-of-type {
+	font-size: 20px;
+}
+body {
+	overflow: hidden;
+}
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Ashik</span>Portfolio</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#service" class="nav-item nav-link">Service</a>
-                <!-- <a href="#portfolio" class="nav-item nav-link">Portfolio</a> -->
-                <!-- <a href="#testimonial" class="nav-item nav-link">Review</a> -->
-                <!-- <a href="#blog" class="nav-item nav-link">Blog</a> -->
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-            <a target="_blank" href="https://drive.google.com/file/d/1wM0piOyD3xfrDaBCiskkB3J05S6nBJwS/view?usp=sharing" class="btn btn-outline-primary d-none d-lg-block mr-2">Download CV</a>
-            <a href="mailto:asanashik7@gmail.com" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/img_feb_16_23.jpg" alt="">
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hi, I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Ashik Ali</h1>
-                    <!-- <h1 class="typed-text-output d-inline font-weight-lighter text-white">Front End Developer</h1> -->
-                    <h1 class="d-inline font-weight-lighter text-white">Front End Developer</h1>
-                    <!-- <div class="typed-text d-none">Web Developer, Front End Developer</div> -->
-                    <!-- <div class="">Front End Developer</div> -->
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5 pl-2">
-                        
-                        <a target="_blank" href="https://drive.google.com/file/d/1wM0piOyD3xfrDaBCiskkB3J05S6nBJwS/view?usp=sharing" class="btn btn-outline-light mr-4">Download CV</a>
-                        <a href="mailto:asanashik7@gmail.com" class="btn btn-outline-light mr-5">Hire Me</a>
-                        <!-- <a href="#skill" class="btn btn-outline-light mr-5">Skill set</a> -->
-                        
-                        <!-- <button type="button" class="btn-play" data-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded-about w-100" src="img/Ashik-chair-pic.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <!-- <p>
-                        Your name
-                        Your current job title
-                        Your company name or personal brand statement
-                        Your hometown
-                        Your alma mater
-                        Your personal and professional goals
-                        A relevant professional accomplishment
-                        Your hobbies
-                        Your skills and areas of expertise
-                    </p> -->
-                    <h3 class="mb-4">Front End Developer</h3>
-                    <p>I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Ashik Ali L</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">24 January 1999</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">B.E - ECE</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">2 Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <a  href="tel:+919094940688" class="text-secondary">+91 90949 40688</a></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <a href="mailto:asanashik7@gmail.com" class="text-secondary">asanashik7@gmail.com</a></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Chennai, India</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
-                    </div>
-                    
-                    <span class="navbar-nav in-same-line">
-                        <a href="mailto:asanashik7@gmail.com" class="btn btn-outline-primary mr-2 w-25">Hire Me</a>
-                        <a href="#qualification" class="btn btn-outline-primary w-25">Learn More</a>
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Bachelor of Engineering ( ECE ): ANNA UNIVERSITY</h5>
-                            <p class="mb-2"><strong>Jeppiaar institute of technology, Chennai</strong> | <small>2016 - 2020</small></p>
-                            <!-- <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p> -->
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">HSC: STATE BOARD</h5>
-                            <p class="mb-2"><strong>Govt. Hr. Sec. School, Velachery</strong> | <small>2014 - 2016</small></p>
-                            <!-- <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p> -->
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">SSLC: STATE BOARD</h5>
-                            <p class="mb-2"><strong>Chennai. Hr. Sec.School</strong> | <small>2013 - 2014</small></p>
-                            <!-- <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Developer</h5>
-                            <p class="mb-2"><strong><a target="_blank" href="https://www.zaigoinfotech.com/">Zaigo Infotech</a></strong> | <small>Mar 2021 - Present</small></p>
-                            <p>Working as front end developer in a product</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Business Associate</h5>
-                            <p class="mb-2"><strong><a target="_blank" href="https://welkinz.in/">Welkinz</a></strong> | <small>Oct 2020 - Dec 2020</small></p>
-                            <p>As a sales and marketing associate for <a target="_blank" href="https://www.unicef.org/india/">UNICEF india</a></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Robotics Trainer</h5>
-                            <p class="mb-2"><strong><a href="http://otomatiks.com/">OTOMATIKS</a></strong> | <small> Jun 2019 - Nov 2019 </small></p>
-                            <p>As a trainer to teach robotics</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
-
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        
-                        <!-- <img src="img/html.png" class="w-50 ml-4"></img> -->
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML</h6>
-                            <h6 class="font-weight-bold">60%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                   
-                    <!-- <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">PHP</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div> -->
-                </div>
-                <div class="col-md-6">
-                  
-                    <div class="skill mb-4">
-                        <!-- <img src="img/css.png" class="w-50 ml-4"></img> -->
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">CSS</h6>
-                            <h6 class="font-weight-bold">60%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                   
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <!-- <img src="img/JS2.png" class="w-50 ml-4"></img> -->
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Javascript</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                                </div>
-
-                <div class="col-md-6">
-                   
-                    <div class="skill mb-4">
-                        <!-- <img src="img/js1.png" class="w-50 ml-4"></img> -->
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">React JS</h6>
-                            <h6 class="font-weight-bold">70%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-    </div>
-    <!-- Skill End -->
-
-
-    <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Design</h4>
-                    </div>
-                    <p>I design the layout, interface, navigation and aesthetic of websites for businesses and clients using <b>HTML & CSS</b>.</p>
-                    <!-- <a class="border-bottom border-primary text-decoration-none" href="">Read More</a> -->
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Development</h4>
-                    </div>
-                    <p>In terms of web development, I ensure websites looks good and functions properly. I worked on multiple websites from static web page to dynamic web applications using <b>Javascript</b>.</p>
-                    <!-- <a class="border-bottom border-primary text-decoration-none" href="">Read More</a> -->
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <!-- fa-solid fa-code -->
-                        <i class="fab fa-2x fa-react service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Components Building</h4>
-                    </div>
-                    <p>I build a customized UI components for React based web applications to improvise application performance using <b>Reatc JS</b>.</p>
-                    <!-- <a class="border-bottom border-primary text-decoration-none" href="">Read More</a> -->
-                </div>
-                <!-- <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Apps Development</h4>
-                    </div>
-                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">SEO</h4>
-                    </div>
-                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Content Creating</h4>
-                    </div>
-                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    
-    <!-- Services End -->
-
-
-    <!-- Portfolio Start -->
-    <!-- <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Portfolio End -->
-
-
-    <!-- Testimonial Start -->
-    <!-- <div class="container-fluid py-5" id="testimonial">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
-
-
-    <!-- Blog Start -->
-    <!-- <div class="container-fluid pt-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Blog End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
-            </div>
-            <!-- <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
-                                    Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div> -->
-        
-            <div class="d-flex justify-content-center mb-4">
-                <!-- <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a> -->
-                <a class="btn btn-dark btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/ashik-ali-latheeef-7a2b99126/"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-dark btn-social mr-2" href="mailto:asanashik7@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a class="btn btn-dark btn-social mr-2" href="tel:+919094940688"><i class="fa fa-phone"></i></a>
-                <a class="btn btn-dark btn-social" target="_blank" href="https://www.instagram.com/from_to_creator/"><i class="fab fa-instagram"></i></a>
-            </div>
-
-        
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white pt-2 pb-2">
-        <div class="container text-center">
-            
-            <!-- <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#">Privacy</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Terms</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">FAQs</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Help</a>
-            </div> -->
-            <p class="m-0"> Customized by <a class="text-white font-weight-bold" href="mailto:asanashik7@gmail.com">Ashik Ali L</a>
-            </p>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <div class="navbar-nav">
-        <a href="#about" class="nav-item nav-link">
-            <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-        </a>
-    </div>
-    
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!-- Hii My Name is Er Robin This ia my Third Happy Birthda Task -->
+<canvas id=c></canvas>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="er.robin" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
+
+<script>
+    var w = c.width = window.innerWidth,
+		h = c.height = window.innerHeight,
+		ctx = c.getContext( '2d' ),
+		
+		hw = w / 2, // half-width
+		hh = h / 2,
+		
+		opts = {
+			strings: [ 'HAPPY', 'BIRTHDAY!',
+                'ABINAYA THYAGARAJAN' ],
+			charSize: 30,
+			charSpacing: 35,
+			lineHeight: 40,
+			
+			cx: w / 2,
+			cy: h / 2,
+			
+			fireworkPrevPoints: 10,
+			fireworkBaseLineWidth: 5,
+			fireworkAddedLineWidth: 8,
+			fireworkSpawnTime: 200,
+			fireworkBaseReachTime: 30,
+			fireworkAddedReachTime: 30,
+			fireworkCircleBaseSize: 20,
+			fireworkCircleAddedSize: 10,
+			fireworkCircleBaseTime: 30,
+			fireworkCircleAddedTime: 30,
+			fireworkCircleFadeBaseTime: 10,
+			fireworkCircleFadeAddedTime: 5,
+			fireworkBaseShards: 5,
+			fireworkAddedShards: 5,
+			fireworkShardPrevPoints: 3,
+			fireworkShardBaseVel: 4,
+			fireworkShardAddedVel: 2,
+			fireworkShardBaseSize: 3,
+			fireworkShardAddedSize: 3,
+			gravity: .1,
+			upFlow: -.1,
+			letterContemplatingWaitTime: 360,
+			balloonSpawnTime: 20,
+			balloonBaseInflateTime: 10,
+			balloonAddedInflateTime: 10,
+			balloonBaseSize: 20,
+			balloonAddedSize: 20,
+			balloonBaseVel: .4,
+			balloonAddedVel: .4,
+			balloonBaseRadian: -( Math.PI / 2 - .5 ),
+			balloonAddedRadian: -1,
+		},
+		calc = {
+			totalWidth: opts.charSpacing * Math.max( opts.strings[0].length, opts.strings[1].length )
+		},
+		
+		Tau = Math.PI * 2,
+		TauQuarter = Tau / 4,
+		
+		letters = [];
+
+ctx.font = opts.charSize + 'px Verdana';
+
+function Letter( char, x, y ){
+	this.char = char;
+	this.x = x;
+	this.y = y;
+	
+	this.dx = -ctx.measureText( char ).width / 2;
+	this.dy = +opts.charSize / 2;
+	
+	this.fireworkDy = this.y - hh;
+	
+	var hue = x / calc.totalWidth * 360;
+	
+	this.color = 'hsl(hue,80%,50%)'.replace( 'hue', hue );
+	this.lightAlphaColor = 'hsla(hue,80%,light%,alp)'.replace( 'hue', hue );
+	this.lightColor = 'hsl(hue,80%,light%)'.replace( 'hue', hue );
+	this.alphaColor = 'hsla(hue,80%,50%,alp)'.replace( 'hue', hue );
+	
+	this.reset();
+}
+Letter.prototype.reset = function(){
+	
+	this.phase = 'firework';
+	this.tick = 0;
+	this.spawned = false;
+	this.spawningTime = opts.fireworkSpawnTime * Math.random() |0;
+	this.reachTime = opts.fireworkBaseReachTime + opts.fireworkAddedReachTime * Math.random() |0;
+	this.lineWidth = opts.fireworkBaseLineWidth + opts.fireworkAddedLineWidth * Math.random();
+	this.prevPoints = [ [ 0, hh, 0 ] ];
+}
+Letter.prototype.step = function(){
+	
+	if( this.phase === 'firework' ){
+		
+		if( !this.spawned ){
+			
+			++this.tick;
+			if( this.tick >= this.spawningTime ){
+				
+				this.tick = 0;
+				this.spawned = true;
+			}
+			
+		} else {
+			
+			++this.tick;
+			
+			var linearProportion = this.tick / this.reachTime,
+					armonicProportion = Math.sin( linearProportion * TauQuarter ),
+					
+					x = linearProportion * this.x,
+					y = hh + armonicProportion * this.fireworkDy;
+			
+			if( this.prevPoints.length > opts.fireworkPrevPoints )
+				this.prevPoints.shift();
+			
+			this.prevPoints.push( [ x, y, linearProportion * this.lineWidth ] );
+			
+			var lineWidthProportion = 1 / ( this.prevPoints.length - 1 );
+			
+			for( var i = 1; i < this.prevPoints.length; ++i ){
+				
+				var point = this.prevPoints[ i ],
+						point2 = this.prevPoints[ i - 1 ];
+					
+				ctx.strokeStyle = this.alphaColor.replace( 'alp', i / this.prevPoints.length );
+				ctx.lineWidth = point[ 2 ] * lineWidthProportion * i;
+				ctx.beginPath();
+				ctx.moveTo( point[ 0 ], point[ 1 ] );
+				ctx.lineTo( point2[ 0 ], point2[ 1 ] );
+				ctx.stroke();
+			
+			}
+			
+			if( this.tick >= this.reachTime ){
+				
+				this.phase = 'contemplate';
+				
+				this.circleFinalSize = opts.fireworkCircleBaseSize + opts.fireworkCircleAddedSize * Math.random();
+				this.circleCompleteTime = opts.fireworkCircleBaseTime + opts.fireworkCircleAddedTime * Math.random() |0;
+				this.circleCreating = true;
+				this.circleFading = false;
+				
+				this.circleFadeTime = opts.fireworkCircleFadeBaseTime + opts.fireworkCircleFadeAddedTime * Math.random() |0;
+				this.tick = 0;
+				this.tick2 = 0;
+				
+				this.shards = [];
+				
+				var shardCount = opts.fireworkBaseShards + opts.fireworkAddedShards * Math.random() |0,
+						angle = Tau / shardCount,
+						cos = Math.cos( angle ),
+						sin = Math.sin( angle ),
+						
+						x = 1,
+						y = 0;
+				
+				for( var i = 0; i < shardCount; ++i ){
+					var x1 = x;
+					x = x * cos - y * sin;
+					y = y * cos + x1 * sin;
+					
+					this.shards.push( new Shard( this.x, this.y, x, y, this.alphaColor ) );
+				}
+			}
+			
+		}
+	} else if( this.phase === 'contemplate' ){
+		
+		++this.tick;
+		
+		if( this.circleCreating ){
+			
+			++this.tick2;
+			var proportion = this.tick2 / this.circleCompleteTime,
+					armonic = -Math.cos( proportion * Math.PI ) / 2 + .5;
+			
+			ctx.beginPath();
+			ctx.fillStyle = this.lightAlphaColor.replace( 'light', 50 + 50 * proportion ).replace( 'alp', proportion );
+			ctx.beginPath();
+			ctx.arc( this.x, this.y, armonic * this.circleFinalSize, 0, Tau );
+			ctx.fill();
+			
+			if( this.tick2 > this.circleCompleteTime ){
+				this.tick2 = 0;
+				this.circleCreating = false;
+				this.circleFading = true;
+			}
+		} else if( this.circleFading ){
+		
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.x + this.dx, this.y + this.dy );
+			
+			++this.tick2;
+			var proportion = this.tick2 / this.circleFadeTime,
+					armonic = -Math.cos( proportion * Math.PI ) / 2 + .5;
+			
+			ctx.beginPath();
+			ctx.fillStyle = this.lightAlphaColor.replace( 'light', 100 ).replace( 'alp', 1 - armonic );
+			ctx.arc( this.x, this.y, this.circleFinalSize, 0, Tau );
+			ctx.fill();
+			
+			if( this.tick2 >= this.circleFadeTime )
+				this.circleFading = false;
+			
+		} else {
+			
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.x + this.dx, this.y + this.dy );
+		}
+		
+		for( var i = 0; i < this.shards.length; ++i ){
+			
+			this.shards[ i ].step();
+			
+			if( !this.shards[ i ].alive ){
+				this.shards.splice( i, 1 );
+				--i;
+			}
+		}
+		
+		if( this.tick > opts.letterContemplatingWaitTime ){
+			
+			this.phase = 'balloon';
+			
+			this.tick = 0;
+			this.spawning = true;
+			this.spawnTime = opts.balloonSpawnTime * Math.random() |0;
+			this.inflating = false;
+			this.inflateTime = opts.balloonBaseInflateTime + opts.balloonAddedInflateTime * Math.random() |0;
+			this.size = opts.balloonBaseSize + opts.balloonAddedSize * Math.random() |0;
+			
+			var rad = opts.balloonBaseRadian + opts.balloonAddedRadian * Math.random(),
+					vel = opts.balloonBaseVel + opts.balloonAddedVel * Math.random();
+			
+			this.vx = Math.cos( rad ) * vel;
+			this.vy = Math.sin( rad ) * vel;
+		}
+	} else if( this.phase === 'balloon' ){
+			
+		ctx.strokeStyle = this.lightColor.replace( 'light', 80 );
+		
+		if( this.spawning ){
+			
+			++this.tick;
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.x + this.dx, this.y + this.dy );
+			
+			if( this.tick >= this.spawnTime ){
+				this.tick = 0;
+				this.spawning = false;
+				this.inflating = true;	
+			}
+		} else if( this.inflating ){
+			
+			++this.tick;
+			
+			var proportion = this.tick / this.inflateTime,
+			    x = this.cx = this.x,
+					y = this.cy = this.y - this.size * proportion;
+			
+			ctx.fillStyle = this.alphaColor.replace( 'alp', proportion );
+			ctx.beginPath();
+			generateBalloonPath( x, y, this.size * proportion );
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.moveTo( x, y );
+			ctx.lineTo( x, this.y );
+			ctx.stroke();
+			
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.x + this.dx, this.y + this.dy );
+			
+			if( this.tick >= this.inflateTime ){
+				this.tick = 0;
+				this.inflating = false;
+			}
+			
+		} else {
+			
+			this.cx += this.vx;
+			this.cy += this.vy += opts.upFlow;
+			
+			ctx.fillStyle = this.color;
+			ctx.beginPath();
+			generateBalloonPath( this.cx, this.cy, this.size );
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.moveTo( this.cx, this.cy );
+			ctx.lineTo( this.cx, this.cy + this.size );
+			ctx.stroke();
+			
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.cx + this.dx, this.cy + this.dy + this.size );
+			
+			if( this.cy + this.size < -hh || this.cx < -hw || this.cy > hw  )
+				this.phase = 'done';
+			
+		}
+	}
+}
+function Shard( x, y, vx, vy, color ){
+	
+	var vel = opts.fireworkShardBaseVel + opts.fireworkShardAddedVel * Math.random();
+	
+	this.vx = vx * vel;
+	this.vy = vy * vel;
+	
+	this.x = x;
+	this.y = y;
+	
+	this.prevPoints = [ [ x, y ] ];
+	this.color = color;
+	
+	this.alive = true;
+	
+	this.size = opts.fireworkShardBaseSize + opts.fireworkShardAddedSize * Math.random();
+}
+Shard.prototype.step = function(){
+	
+	this.x += this.vx;
+	this.y += this.vy += opts.gravity;
+	
+	if( this.prevPoints.length > opts.fireworkShardPrevPoints )
+		this.prevPoints.shift();
+	
+	this.prevPoints.push( [ this.x, this.y ] );
+	
+	var lineWidthProportion = this.size / this.prevPoints.length;
+	
+	for( var k = 0; k < this.prevPoints.length - 1; ++k ){
+		
+		var point = this.prevPoints[ k ],
+				point2 = this.prevPoints[ k + 1 ];
+		
+		ctx.strokeStyle = this.color.replace( 'alp', k / this.prevPoints.length );
+		ctx.lineWidth = k * lineWidthProportion;
+		ctx.beginPath();
+		ctx.moveTo( point[ 0 ], point[ 1 ] );
+		ctx.lineTo( point2[ 0 ], point2[ 1 ] );
+		ctx.stroke();
+		
+	}
+	
+	if( this.prevPoints[ 0 ][ 1 ] > hh )
+		this.alive = false;
+}
+function generateBalloonPath( x, y, size ){
+	
+	ctx.moveTo( x, y );
+	ctx.bezierCurveTo( x - size / 2, y - size / 2,
+									 	 x - size / 4, y - size,
+									   x,            y - size );
+	ctx.bezierCurveTo( x + size / 4, y - size,
+									   x + size / 2, y - size / 2,
+									   x,            y );
+}
+
+function anim(){
+	
+	window.requestAnimationFrame( anim );
+	
+	ctx.fillStyle = '#111';
+	ctx.fillRect( 0, 0, w, h );
+	
+	ctx.translate( hw, hh );
+	
+	var done = true;
+	for( var l = 0; l < letters.length; ++l ){
+		
+		letters[ l ].step();
+		if( letters[ l ].phase !== 'done' )
+			done = false;
+	}
+	
+	ctx.translate( -hw, -hh );
+	
+	if( done )
+		for( var l = 0; l < letters.length; ++l )
+			letters[ l ].reset();
+}
+
+for( var i = 0; i < opts.strings.length; ++i ){
+	for( var j = 0; j < opts.strings[ i ].length; ++j ){
+		letters.push( new Letter( opts.strings[ i ][ j ], 
+														j * opts.charSpacing + opts.charSpacing / 2 - opts.strings[ i ].length * opts.charSize / 2,
+														i * opts.lineHeight + opts.lineHeight / 2 - opts.strings.length * opts.lineHeight / 2 ) );
+	}
+}
+
+anim();
+
+window.addEventListener( 'resize', function(){
+	
+	w = c.width = window.innerWidth;
+	h = c.height = window.innerHeight;
+	
+	hw = w / 2;
+	hh = h / 2;
+	
+	ctx.font = opts.charSize + 'px Verdana';
+})
+</script>
 
 </html>
